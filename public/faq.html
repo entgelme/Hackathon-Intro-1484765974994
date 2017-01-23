@@ -14,32 +14,55 @@
 
 <ul>
 	<li> <b><a>I need some test data from our backend systems. How can I integrate that with my app?</a><br><br>
-	Answer:</b> although there are services on Bluemix, which especially 
-support the secure integration with on-premise systems, we do not 
-recommend to use them for the hackathon. The integration concept has to 
-be discussed with and approved by people in your company, who are 
-responsible for network administration, security, etc. This may take 
-some time. 
-	If possible, it’s a better approach to export data, e.g. to a csv file 
-and import that again into a database service on Bluemix. Please make 
-sure, that the data is uncritical, i.e. does not violate security or 
-sensitive personal data rules of your company or country.
-	In case of questions, please contact us. We will be happy to help you 
-with the setup.<br><br></li>
+	   Answer:</b> although there are services on Bluemix, which especially 
+        support the secure integration with on-premise systems, we do not 
+        recommend to use them for the hackathon. The integration concept has to 
+        be discussed with and approved by people in your company, who are 
+        responsible for network administration, security, etc. This may take 
+        some time. 
+        If possible, it’s a better approach to export data, e.g. to a csv file 
+        and import that again into a database service on Bluemix. Please make 
+        sure, that the data is uncritical, i.e. does not violate security or 
+        sensitive personal data rules of your company or country.
+        In case of questions, please contact us. We will be happy to help you 
+        with the setup.<br><br>
+    </li>
  
-	<li><b><a>I had a Bluemix Trial Account before, but it has expired in the meantime. What shall I do now?</a><br><br>
-	Answer:</b> the Trial Accounts expire after 30 days and the IBMID is 
-blocked after this period of evaluation. In regard to make IBM Bluemix 
-	available to all participants, we would like to reactivate those 
-expired accounts on notice by you! Therefore, please let us know if you 
-	want to use Bluemix again! 
- 
- 
-For reactivation of your account and for all other questions around the 
-IBM sponsoring at the Siemens Hackathon, please feel free to get in 
-touch with Jakob Boehm (jakob.boehm@de.ibm.com, +40/16098976670).
-	Just refer to your Bluemix account name, so we can reactivate your 
-account once.</li>
+	<li>
+        <b><a>I had a Bluemix Trial Account before, but it has expired in the meantime. What shall I do now?</a><br><br>
+        Answer:</b> the Trial Accounts expire after 30 days and the IBMID is 
+        blocked after this period of evaluation. In regard to make IBM Bluemix 
+	    available to all participants, we would like to reactivate those 
+        expired accounts on notice by you! Therefore, please let us know if you want to use Bluemix again! 
+        
+        For reactivation of your account and for all other questions around the 
+        IBM sponsoring at the Siemens Hackathon, please feel free to get in 
+        touch with Jakob Boehm (jakob.boehm@de.ibm.com, +49 16098976670).
+        Just refer to your Bluemix account name, so we can reactivate your 
+        account once.<br><br>
+    </li>
+    
+    <li>
+        <b><a>After the hackathon has finished, how can I continue to use Bluemix for my work at Siemens?</a><br><br>
+        Answer:</b> as described, for the hackathon you can use the Bluemix Trial Account for a period of 30 days at no cost. If you want to continue with Bluemix afterwards, your account can be migrated to a Bluemix company account. Please contact Mr. Tobias Engler and describe your business reason to him. He is able to invite you to a Bluemix organisation and space existing in the company account. Alternatively, you may also contact Jakob Boehm (jakob.boehm@de.ibm.com, +49 16098976670). He will help you to establish the contact to Mr. Engler. <br><br>
+    </li>
+    
+    <li>
+        <b><a>When my account gets migrated to the company account, how can I migrate my existing projects to the company account's organization?</a><br><br>
+        Answer:</b> at first, there is no automatic support for migration of a project from the private organization you use with the Trial Account to an organization as part of the company account. But remember, your app consists of code and data. For the code, you only have the runtime construct in your Bluemix project, which are a result of a build process (of any kind). So, we strongly recommend to establish a source code repository feeding a fully automatic build and deployment process, which allows you to (re-)create the executable code (together with its bound service instances) easily by just a click, or maybe completely automatic on any code change (refer to the continuous integration / continuous deployment (CI/CD) practice). You can do this with your preferred local or company toolchain, or decide to establish and configure your toolchain in the cloud alternatively. In the latter case you can use the Bluemix <a href="https://console.ng.bluemix.net/catalog/services/continuous-delivery/" target="_blank">Continuous Delivery</a> and <a href="https://console.ng.bluemix.net/catalog/services/delivery-pipeline/" target="_blank">Delivery Pipeline</a> services to build up your toolchain.<br>
+        In summary, a migration of code and service instances from your trial account's organization to the company account's organization is not necessary and can easily be achieved by just recreating it with the new organization as a target. <br><br>
+        
+        But what about data? <br>
+        Yes, in general, you should take care about your data and it might be neccessary to migrate it from the trial account's organization ("old") to the company account's organization ("new"). If we say "data", this may cover the data used by the app to do its work, e.g. located in a database service. In addition, it also covers configuration data, e.g. the devices you connected to the IoT platform service, or a model you created for the Watson Conversion service, etc. 
+        At first, think twice! The "trial" account was for trial, i.e. in the context of the hackathon to build a prototype, which typically will use prototype data, not productive data. So the first question to answer is, whether you have to migrate the prototype's data at all. Next, if the answer is positive, what part of the data really needs to be moved to the new organization.<br><br>
+        
+        In normal cases, prototypes will not come with an extensive amount of data. Regular means can be used to move the data from the service instance in the "old" organization to the one in the "new" organization. For example, you may export the data from the old organbization's database service, e.g. to a CSV file, and then import it to the new organization's database service. Normally, the data migration tasks will be small and carried out quickly.<br><br>
+        
+        <b>The important message is: if you really need data migration, do it before your Trial Account expires!<br>
+        After its expiration (after 30 days) you will not be able to access your "old" organization anymore.</b> <br><br>
+        Please don't hesitate to contact us via the <a href="help.html">help channels</a> in case you have questions.
+        <br><br>
+    </li>
 </ul>
 
   
