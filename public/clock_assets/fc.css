@@ -1,0 +1,5 @@
+body .flip-clock-wrapper ul li a div div.inn,
+body .flip-clock-label ul li a div div.inn { color: #00aed1; background-color: #666666; }
+body .flip-clock-small-wrapper  ul li a div div.inn { color: #00aed1; background-color: #666666; } // orig: 333333
+body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #FFFFFF; } // orig: 323434
+body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #FFFFFF; } 
